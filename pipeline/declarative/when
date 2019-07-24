@@ -1,0 +1,11 @@
+stage('Sync something') {
+            when {
+                anyOf{
+                    expression {env.SYNC_LINUX == 'true'}
+                    expression {env.SYNC_WINDOWS == 'true'}
+                    }
+                }
+            steps {
+                echo 'Sync'
+                    }
+            }
