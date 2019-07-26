@@ -1,23 +1,17 @@
-import jenkins.model.*;
-import groovy.time.TimeCategory;
-import hudson.EnvVars;
+import jenkins.model.*
+import groovy.time.TimeCategory
+import hudson.EnvVars
 
 EnvVars vars = build.getEnvironment(listener);
 def zabbixHostName=vars.get("JENKINS_MASTER_ZABBIX_HOST")
 def zabbixSender=vars.get("ZABBIX_SENDER_PATH");
 def zabbixServer='-z '+vars.get("ZABBIX_SERVER");
 
-
 void sendToZabbix(def zabbixServer, def zabbixSender, def host, def item, def value){
-
-    //def zabbixSender=vars.get("ZABBIX_SENDER_PATH");
-    //def zabbixServer='-z '+vars.get("ZABBIX_SERVER");
     def zabbixHost='-s '+host
     def zabbixItem='-k '+item
     def zabbixItemValue='-o '+value
-
     def sendDataToZabbix=zabbixSender+' '+zabbixServer+' '+zabbixHost+' '+zabbixItem+' '+zabbixItemValue
-
     println(sendDataToZabbix.execute().text)
 }
 

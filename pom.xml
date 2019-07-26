@@ -13,12 +13,12 @@
     <!-- Identification -->
     <groupId>org.hudsonci.plugins</groupId>
     <artifactId>extra-scripts</artifactId>
-    <version>0.0.01-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>hpi</packaging>
 
     <!-- Information -->
-    <name>Jenkins notices</name>
-    <description>Useful scripts for Jenkins</description>
+    <name>Extra scripts for Jenkins</name>
+    <description>Provides extra dependencies for my Jenkins</description>
 
     <!-- Team -->
     <developers>
@@ -26,7 +26,7 @@
             <id>btk3000</id>
             <name>Ilya</name>
             <email>btk3000@gmail.com</email>
-            <url>https://github.com/btk3000</url>
+            <url>https://github.com/btk3000/Jenkinsci</url>
         </developer>
     </developers>
 
@@ -35,6 +35,10 @@
         <repository>
             <id>repo.jenkins-ci.org</id>
             <url>http://repo.jenkins-ci.org/public/</url>
+        </repository>
+        <repository>
+            <id>com.mvnrepository</id>
+            <url>https://mvnrepository.com/artifact/</url>
         </repository>
 
     </repositories>
@@ -47,10 +51,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>org.biouno</groupId>
             <artifactId>uno-choice</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>1.2</version>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
@@ -125,10 +128,9 @@
             <optional>true</optional>
         </dependency>
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>com.sonyericsson.jenkins.plugins.bfa</groupId>
             <artifactId>build-failure-analyzer</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>1.13.2</version>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
@@ -161,10 +163,9 @@
             <optional>true</optional>
         </dependency>
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>io.jenkins.plugins</groupId>
             <artifactId>code-coverage-api</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>1.0.12</version>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
@@ -232,11 +233,11 @@
             <version>1.18</version>
             <optional>true</optional>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.cloudbees.jenkins.plugins/custom-tools-plugin -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>com.cloudbees.jenkins.plugins</groupId>
             <artifactId>custom-tools-plugin</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>0.6</version>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
@@ -304,17 +305,17 @@
             <version>1.0.3</version>
             <optional>true</optional>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.seitenbau.jenkins.plugins/dynamicparameter -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>com.seitenbau.jenkins.plugins</groupId>
             <artifactId>dynamicparameter</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>0.2.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.synopsys.arc.jenkinsci/dynamic-search-view -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>com.synopsys.arc.jenkinsci</groupId>
             <artifactId>dynamic-search-view</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>0.2.1</version>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
@@ -346,11 +347,11 @@
             <version>0.76</version>
             <optional>true</optional>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jvnet.hudson.plugins/extended-read-permission -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>org.jvnet.hudson.plugins</groupId>
             <artifactId>extended-read-permission</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>1.0</version>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
@@ -360,13 +361,7 @@
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
-            <artifactId>extra-colums</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
-            <artifactId>extra-tool-installers</artifactId>
+            <artifactId>extra-columns</artifactId>
             <version>LATEST</version>
             <optional>true</optional>
         </dependency>
@@ -374,12 +369,6 @@
             <groupId>org.jenkins-ci.plugins</groupId>
             <artifactId>fail-the-build-plugin</artifactId>
             <version>1.0</version>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
-            <artifactId>favorite</artifactId>
-            <version>LATEST</version>
             <optional>true</optional>
         </dependency>
         <dependency>
@@ -394,11 +383,11 @@
             <version>0.15.2</version>
             <optional>true</optional>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkins-ci.plugins/cloudbees-folder -->
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
-            <artifactId>cloudbees-folders</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <artifactId>cloudbees-folder</artifactId>
+            <version>6.6</version>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
@@ -438,12 +427,6 @@
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
-            <artifactId>github</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
             <artifactId>gitlab-plugin</artifactId>
             <version>1.5.12</version>
             <optional>true</optional>
@@ -478,11 +461,11 @@
             <version>1.8.22</version>
             <optional>true</optional>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkins-ci.plugins.icon-shim/icon-shim -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>org.jenkins-ci.plugins.icon-shim</groupId>
             <artifactId>icon-shim</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>2.0.3</version>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
@@ -496,11 +479,11 @@
             <version>1.28</version>
             <optional>true</optional>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkins-ci.plugins/jackson2-api -->
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
-            <artifactId>jacson2-api</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <artifactId>jackson2-api</artifactId>
+            <version>2.7.2</version>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
@@ -508,35 +491,29 @@
             <version>1.5</version>
             <optional>true</optional>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkins-ci.ui/ace-editor -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>org.jenkins-ci.ui</groupId>
             <artifactId>ace-editor</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>1.1</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkins-ci.ui/handlebars -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>org.jenkins-ci.ui</groupId>
             <artifactId>handlebars</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>1.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkins-ci.ui/jquery-detached -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>org.jenkins-ci.ui</groupId>
             <artifactId>jquery-detached</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>1.2.1</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkins-ci.ui/momentjs -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>org.jenkins-ci.ui</groupId>
             <artifactId>momentjs</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
-            <artifactId>ownership</artifactId>
-            <version>RELEASE</version>
-            <optional>true</optional>
+            <version>1.1.1</version>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
@@ -550,11 +527,11 @@
             <version>1.0</version>
             <optional>true</optional>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.synopsys.arc.jenkinsci.plugins/job-restrictions -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>com.synopsys.arc.jenkinsci.plugins</groupId>
             <artifactId>job-restrictions</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>0.8</version>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
@@ -592,17 +569,11 @@
             <version>1.20</version>
             <optional>true</optional>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.6wind.jenkins/lockable-resources -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
-            <artifactId>locale</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>org.6wind.jenkins</groupId>
             <artifactId>lockable-resources</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>1.9</version>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
@@ -646,11 +617,11 @@
             <version>1.14</version>
             <optional>true</optional>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/net.praqma/matrix-reloaded -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
-            <artifactId>matrix-reloader</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <groupId>net.praqma</groupId>
+            <artifactId>matrix-reloaded</artifactId>
+            <version>1.1.2</version>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
@@ -658,11 +629,11 @@
             <version>1.2</version>
             <optional>true</optional>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkins-ci.main/maven-plugin -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>org.jenkins-ci.main</groupId>
             <artifactId>maven-plugin</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>2.17</version>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
@@ -676,11 +647,11 @@
             <version>4.0.2.3</version>
             <optional>true</optional>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkins-ci.plugins/build-monitor-plugin -->
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
-            <artifactId>monitoring</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <artifactId>build-monitor-plugin</artifactId>
+            <version>1.2+build.64</version>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
@@ -732,12 +703,6 @@
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
-            <artifactId>perforce</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
             <artifactId>perfpublisher</artifactId>
             <version>8.09</version>
             <optional>true</optional>
@@ -748,11 +713,12 @@
             <version>1.5</version>
             <optional>true</optional>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkins-ci.plugins.workflow/workflow-aggregator -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>org.jenkins-ci.plugins.workflow</groupId>
             <artifactId>workflow-aggregator</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>2.0</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
@@ -760,17 +726,18 @@
             <version>1.9</version>
             <optional>true</optional>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkins-ci.plugins.workflow/workflow-api -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>org.jenkins-ci.plugins.workflow</groupId>
             <artifactId>workflow-api</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>2.18</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkins-ci.plugins.workflow/workflow-basic-steps -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
-            <artifactId>workflow-basic-step</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <groupId>org.jenkins-ci.plugins.workflow</groupId>
+            <artifactId>workflow-basic-steps</artifactId>
+            <version>1.11</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
@@ -778,35 +745,37 @@
             <version>2.7</version>
             <optional>true</optional>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkinsci.plugins/pipeline-model-definition -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>org.jenkinsci.plugins</groupId>
             <artifactId>pipeline-model-definition</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>1.2.8</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkinsci.plugins/pipeline-model-declarative-agent -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>org.jenkinsci.plugins</groupId>
             <artifactId>pipeline-model-declarative-agent</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>1.1.1</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkinsci.plugins/pipeline-model-extensions -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
-            <artifactId>pipe;ine-model-extensions</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <groupId>org.jenkinsci.plugins</groupId>
+            <artifactId>pipeline-model-extensions</artifactId>
+            <version>1.2</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkins-ci.plugins.workflow/workflow-cps -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>org.jenkins-ci.plugins.workflow</groupId>
             <artifactId>workflow-cps</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>2.41</version>
+            <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkins-ci.plugins.workflow/workflow-job -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>org.jenkins-ci.plugins.workflow</groupId>
             <artifactId>workflow-job</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>2.15</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
@@ -814,41 +783,42 @@
             <version>1.3.1</version>
             <optional>true</optional>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkinsci.plugins/pipeline-model-api -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>org.jenkinsci.plugins</groupId>
             <artifactId>pipeline-model-api</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>1.2</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkins-ci.plugins.workflow/workflow-multibranch -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>org.jenkins-ci.plugins.workflow</groupId>
             <artifactId>workflow-multibranch</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>2.16</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkins-ci.plugins.workflow/workflow-durable-task-step -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>org.jenkins-ci.plugins.workflow</groupId>
             <artifactId>workflow-durable-task-step</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>2.17</version>
+            <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkins-ci.plugins.pipeline-stage-view/pipeline-rest-api -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>org.jenkins-ci.plugins.pipeline-stage-view</groupId>
             <artifactId>pipeline-rest-api</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>2.9</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkins-ci.plugins.workflow/workflow-scm-step -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>org.jenkins-ci.plugins.workflow</groupId>
             <artifactId>workflow-scm-step</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>2.6</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkins-ci.plugins.workflow/workflow-cps-global-lib -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>org.jenkins-ci.plugins.workflow</groupId>
             <artifactId>workflow-cps-global-lib</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>2.9</version>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
@@ -856,23 +826,17 @@
             <version>2.3</version>
             <optional>true</optional>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkins-ci.plugins.workflow/workflow-step-api -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
-            <artifactId>pipeline-stage-step-metadata</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
-            <artifactId>pipeline-stage-view</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>org.jenkins-ci.plugins.workflow</groupId>
             <artifactId>workflow-step-api</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>2.13</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkins-ci.plugins.pipeline-stage-view/pipeline-stage-view -->
+        <dependency>
+            <groupId>org.jenkins-ci.plugins.pipeline-stage-view</groupId>
+            <artifactId>pipeline-stage-view</artifactId>
+            <version>2.9</version>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
@@ -880,17 +844,17 @@
             <version>2.9</version>
             <optional>true</optional>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkins-ci.plugins.workflow/workflow-support -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>org.jenkins-ci.plugins.workflow</groupId>
             <artifactId>workflow-support</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>2.16</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkins-ci.plugins/plain-credentials -->
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
-            <artifactId>plain-credantials</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <artifactId>plain-credentials</artifactId>
+            <version>1.3</version>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
@@ -922,11 +886,11 @@
             <version>1.20.1</version>
             <optional>true</optional>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.hudsonci.plugins/rebuild -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>org.hudsonci.plugins</groupId>
             <artifactId>rebuild</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>1.16-h-1</version>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
@@ -1000,11 +964,11 @@
             <version>1.10</version>
             <optional>true</optional>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/hudson.plugins.sloccount/sloccount -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>hudson.plugins.sloccount</groupId>
             <artifactId>sloccount</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <version>1.4</version>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
@@ -1024,10 +988,11 @@
             <version>LATEST</version>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.hudsonci.plugins/analysis-core -->
         <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
+            <groupId>org.hudsonci.plugins</groupId>
             <artifactId>analysis-core</artifactId>
-            <version>LATEST</version>
+            <version>1.49-h-1</version>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
@@ -1043,21 +1008,15 @@
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
-            <artifactId>tasks</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
             <artifactId>template-project</artifactId>
             <version>1.5.2</version>
             <optional>true</optional>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkins-ci.plugins/throttle-concurrents -->
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
-            <artifactId>throttle-concurrent</artifactId>
-            <version>LATEST</version>
-            <optional>true</optional>
+            <artifactId>throttle-concurrents</artifactId>
+            <version>1.7.1</version>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
@@ -1099,12 +1058,6 @@
             <groupId>org.jenkins-ci.plugins</groupId>
             <artifactId>violation-comments-to-gitlab</artifactId>
             <version>2.25</version>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
-            <artifactId>web-hook</artifactId>
-            <version>LATEST</version>
             <optional>true</optional>
         </dependency>
         <dependency>
