@@ -1,6 +1,7 @@
-import jenkins.model.*;
-import hudson.model.Cause;
-import com.synopsys.arc.jenkins.plugins.ownership.jobs.*;
+import com.synopsys.arc.jenkins.plugins.ownership.*
+import jenkins.model.*
+import hudson.model.Cause
+import com.synopsys.arc.jenkins.plugins.ownership.jobs.*
 
 /*
 Run this scrip as "System Groovy script of Freestyle project.
