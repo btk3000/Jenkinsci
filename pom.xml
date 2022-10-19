@@ -848,7 +848,7 @@
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
             <artifactId>pipeline-input-step</artifactId>
-            <version>2.9</version>
+            <version>449.v77f0e8b_845c4</version>
             <optional>true</optional>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.jenkins-ci.plugins.workflow/workflow-support -->
