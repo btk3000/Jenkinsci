@@ -369,7 +369,7 @@
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
             <artifactId>extra-columns</artifactId>
-            <version>LATEST</version>
+            <version>1.23</version>
             <optional>true</optional>
         </dependency>
         <dependency>
