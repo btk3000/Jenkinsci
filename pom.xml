@@ -237,7 +237,7 @@
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
             <artifactId>credentials-binding</artifactId>
-            <version>1.18</version>
+            <version>1.23</version>
             <optional>true</optional>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.cloudbees.jenkins.plugins/custom-tools-plugin -->
