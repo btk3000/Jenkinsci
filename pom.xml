@@ -1028,7 +1028,7 @@
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
             <artifactId>timestamper</artifactId>
-            <version>1.8.10</version>
+            <version>1.11.2</version>
             <optional>true</optional>
         </dependency>
         <dependency>
